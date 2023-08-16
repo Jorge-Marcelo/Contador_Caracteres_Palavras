@@ -1,0 +1,133 @@
+/*
+Autor: Jorge Marcelo
+Data de Criação: 16/08/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+Instagram: https://www.instagram.com/10_stronger/
+Threads: https://www.threads.net/@10_stronger
+*/ 
+
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Configurações padrão*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-align: center;
+transition: all 0.5s ease;
+font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Background color*/
+body{
+background-color: rgb(62, 252, 220);
+}
+
+/*Formulario*/
+form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 320px;
+background-color: rgb(41, 40, 40);
+border-radius: 10px;
+box-shadow: 0 20px 25px rgba(0,0,0,0.25);
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+padding: 10px;
+border: 3px solid rgb(255, 255, 255);
+}
+
+
+/*Containers*/
+section{
+display: flex;
+justify-content: space-between;
+margin: 20px;
+font-size: 1.5em;
+color: rgb(255, 255, 255);
+}
+
+article{
+margin-left: 10px;
+margin-right: 10px;
+background:transparent;
+border-radius: 10px;
+width: 120px;
+height: 70px;
+border: 3px solid rgb(255, 255, 255);
+}
+
+/*Textarea*/
+textarea{
+border-radius: 10px;
+border: 3px solid white;
+resize: none;
+padding: 20px;
+color: #ffffff;
+font-weight: 900;
+outline: none;
+font-size: 1.3em;
+background-color: transparent;
+}
+
+p{
+color: rgb(0, 0, 0);
+font-size: 1.2em;
+}
+
+/*Textos*/
+h1{
+color: rgb(0, 255, 191);
+font-size: 1.6em;
+font-weight: 900;
+margin: 10px;
+}
+
+h2{
+color: rgb(0, 255, 191);
+font-size: 1.5em;
+font-weight: 900;
+margin-top: 15px;
+margin-bottom: 30px;
+}
+
+/*Classes de redes sociais*/
+button {
+margin: 0 7px;
+width: 50px; 
+height: 50px; 
+border-radius: 100%;
+cursor: pointer;
+}
+
+.social{
+background: transparent;
+border: 2px solid rgb(2, 182, 158);
+background-color: white;
+transition: transform 0.3s ease-in-out;
+}
+
+.social:hover{
+background-color: rgb(96, 248, 190);
+border: 2px solid rgb(255, 255, 255);
+animation: button 0.3s ease-in-out forwards;
+}
+
+
+
+@keyframes button{
+from{
+transform: translateY(0);
+}
+to{
+transform: translateY(-20px);
+}
+}
+
