@@ -23,7 +23,7 @@ font-family: 'Bebas Neue', sans-serif;
 
 /*Background color*/
 body{
-background-color: rgb(62, 252, 220);
+background-color: rgb(252, 170, 62);
 }
 
 /*Formulario*/
@@ -84,18 +84,37 @@ font-size: 1.2em;
 
 /*Textos*/
 h1{
-color: rgb(0, 255, 191);
+color: rgb(255, 174, 0);
 font-size: 1.6em;
 font-weight: 900;
 margin: 10px;
 }
 
 h2{
-color: rgb(0, 255, 191);
+color: rgb(255, 174, 0);
 font-size: 1.5em;
 font-weight: 900;
 margin-top: 15px;
 margin-bottom: 30px;
+}
+
+
+/*Animação com sprite*/
+.animation{
+width: calc(1350px/10);
+height: 134px;
+background: url("../anim/Ring2.png");
+animation: animation 1s steps(10) infinite;
+}
+
+
+@keyframes animation {
+from{
+background-position: 0;
+}
+to{
+background-position: 1350px;
+}
 }
 
 /*Classes de redes sociais*/
@@ -109,13 +128,13 @@ cursor: pointer;
 
 .social{
 background: transparent;
-border: 2px solid rgb(2, 182, 158);
+border: 2px solid rgb(255, 174, 0);
 background-color: white;
 transition: transform 0.3s ease-in-out;
 }
 
 .social:hover{
-background-color: rgb(96, 248, 190);
+background-color: rgb(246, 248, 96);
 border: 2px solid rgb(255, 255, 255);
 animation: button 0.3s ease-in-out forwards;
 }
