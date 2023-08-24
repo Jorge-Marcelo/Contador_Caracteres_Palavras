@@ -13,20 +13,27 @@ let contadorWord = document.getElementById("contadorWord");
 let charStyle = document.getElementById("charStyle");
 let wordStyle = document.getElementById("wordStyle");
 
-
+/*Função que faz a contagem*/
 function contadores(evento){
 evento.preventDefault();
 
+/*Pegando o comprimento dos caracteres*/
 contadorChar.textContent = textArea.value.length;
+/*Removendo os espaços para não contar como caractetrs*/
 let texto = textArea.value.trim();
+
+/*Usando a Regex para contar os espaços como palavras*/
 let wordArray = texto.split(/\s+/).filter(item => item);
 contadorWord.textContent = wordArray.length;
 }
+/*Escutador de evento dos contadores*/
 textArea.addEventListener("input", contadores);
 
+/*Limitadores*/
 function limitadores(evento){
 evento.preventDefault();
 
+/*Condições para cada limite de caracteres*/
 if (textArea.value.length > 130){
 textArea.style.borderColor = "red";
 textArea.style.color = "red";
